@@ -1,5 +1,5 @@
 
-https://github.com/darkSect0r/MonoPass/blob/8b2edb8fee608b6b4867bdd7066ba52cef7502a7/Needed%20Files/ss.png
+<img src="ss.png">
 
 # MonoPass v0.1 Beta Build
 ## created by The darkSector Team
