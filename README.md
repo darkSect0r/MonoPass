@@ -1,5 +1,5 @@
 
-[image]
+<img src="ss.png">
 
 # MonoPass v0.1 Beta Build
 ## created by The darkSector Team
@@ -24,3 +24,5 @@ I hope you enjoy this release! If you want to see more releases like this, check
 https://discord.gg/DcxPygc
 <br><br>
 Thanks for viewing!
+<br><br>
+### NOTE: The font is messed up not sure why, there must have been a custom font package I used back when I create this project, but now seem to have lost. :( Just change the font to your liking, otherwise it will updated in a future build :D
