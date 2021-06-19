@@ -1,11 +1,14 @@
 
-<img src="ss.png">
+<img src="ss1.png">
+<img src="ss2.png">
+<img src="ss3.png">
+<img src="ss4.png">
 
-# MonoPass v0.1 Beta Build
+# MonoPass v0.2 Gama Build
 ## created by The darkSector Team
 
-#### Released: <i>06/09/2021</i><br>
-### Last Update: <i>N/A</i>
+#### Released: <i>09/06/2021</i><br>
+### Last Update: <i>19/06/2021</i>
 
 <hr>
 

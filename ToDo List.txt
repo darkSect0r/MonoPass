@@ -1,25 +1,25 @@
 Version 1 Changes:
 First and foremost FIX THE FONT! Looks like dirt :D
 1.	Fix the Master password bug….  ****IMPORTANT****
-2.	Backup password list  ****IMPORTANT****
+2.	Backup password list  ****IMPORTANT****  - add login with email, also fixes password recovery
 3.	Edit passwords  ****IMPORTANT****
 4.	password protect password column on listview  ****IMPORTANT****
-5.	Fix ‘unhandled exception’ when no ’Data’ folder found.  ****IMPORTANT****
+5.	Fix ‘unhandled exception’ when no ’Data’ folder found.  ****IMPORTANT**** - fixed by TheDebianGuy
 6.	add About button
 7.	add re-arrange list items
-8.	ADD UPDATER function and “Check for Updates…” button
+8.	ADD UPDATER function and “Check for Updates…” button - added by TheDebianGuy
 9.	add esc button
 10.	add menustrip
 
 Version 2:
-1.	add cloud saving list
-2.	add a notes column
-3.	come up with some way to recover passwords without master pass
+1.	add cloud saving list - add login with email, also fixes password recovery
+2.	add a notes column - added by TheDebianGuy
+3.	come up with some way to recover passwords without master pass - add login with email, also fixes cloud saving
 4.	add way to make new password files
 5.	add notifyicon
 6.	find and add Sexy tabs
 7.	New Theme?
-8.	Secure pass generator
+8.	Secure pass generator - added by TheDebianGuy
 9.	Add serial protection….is this needed??
 10.	new icon?
 11.	SAVE USernames/profiles (Profiler…)( save size of column width when user adjusts??)

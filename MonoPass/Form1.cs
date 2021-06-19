@@ -5,6 +5,8 @@ using System.IO;
 using System.Windows.Forms;
 using System.Text;
 using mpdata;
+using System.Linq;
+using System.Net;
 
 namespace MonoPass
 {
@@ -22,7 +24,7 @@ namespace MonoPass
         private void saveF()
         {
             RichTextBox rtbs = new RichTextBox();
-            if (!File.Exists("Data\\DoNotDelete")) {rtbs.SaveFile("Data\\DoNotDelete", RichTextBoxStreamType.PlainText); }
+            if (!File.Exists("Data\\DoNotDelete")) { rtbs.SaveFile("Data\\DoNotDelete", RichTextBoxStreamType.PlainText); }
             int len = textBox4.Text.Length;
             len = 32 - len;
             StringBuilder sb = new StringBuilder(textBox4.Text);
@@ -35,10 +37,25 @@ namespace MonoPass
             rtbs.SaveFile("Data\\DoNotDelete", RichTextBoxStreamType.PlainText);
         }
 
+        private void saveNotes()
+        {
+            int len = textBox4.Text.Length;
+            len = 32 - len;
+            StringBuilder sb = new StringBuilder(textBox4.Text);
+            sb.Append('A', len);
+            string pass = sb.ToString();
+            File.WriteAllText("Data\\Notes", mpdatacl.EncryptString(pass, richTextBox1.Text));
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             RichTextBox rtb = new RichTextBox();
-            if (!File.Exists("Data\\DoNotDelete")) { rtb.SaveFile("Data\\DoNotDelete", RichTextBoxStreamType.PlainText); }
+            if (!Directory.Exists("Data"))
+            {
+                Directory.CreateDirectory("Data");
+                rtb.SaveFile("Data\\DoNotDelete", RichTextBoxStreamType.PlainText);
+                rtb.SaveFile("Data\\Notes", RichTextBoxStreamType.PlainText);
+            }
             Form3 form3 = new Form3();
             form3.ShowDialog();
             textBox4.Text = form3.textBox1.Text;
@@ -62,6 +79,7 @@ namespace MonoPass
                     }
                     line += 1;
                 }
+                richTextBox1.Text = mpdatacl.DecryptString(pass, File.ReadAllText("Data\\Notes"));
             }
             catch
             {
@@ -122,7 +140,7 @@ namespace MonoPass
                 MessageBox.Show("Error saving Password List, please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        
+
         private void button2_Click(object sender, EventArgs e)
         {
             if (button1.Text != "Nothing Selected")
@@ -143,7 +161,7 @@ namespace MonoPass
             else
             {
                 MessageBox.Show("You havn't selected anything! Make a selection first.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                
+
             }
         }
 
@@ -228,7 +246,7 @@ namespace MonoPass
             {
                 MessageBox.Show("Error saving Master Password! Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
+
         }
 
         private void listView1_DoubleClick(object sender, EventArgs e)
@@ -327,6 +345,97 @@ namespace MonoPass
                 _itemDnD = null;
                 Cursor = Cursors.Default;
             }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            bool one_checked = false;
+            int length = 0;
+            try
+            {
+                length = Int32.Parse(textBox5.Text);
+            }
+            catch (Exception) { }
+            string chars = "";
+            if (azcheckbox.Checked)
+            {
+                chars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+                one_checked = true;
+            }
+            if (lowerazcheckbox.Checked)
+            {
+                chars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToLower();
+                one_checked = true;
+            }
+            if (numcheckbox.Checked)
+            {
+                chars += "0123456789";
+                one_checked = true;
+            }
+            if (specialcheckbox.Checked)
+            {
+                chars += "!?@#$%^&*()_+{}|:<>=-";
+                one_checked = true;
+            }
+            if (!one_checked)
+            { }
+            else
+            {
+                var random = new Random();
+                var randomString = new string(Enumerable.Repeat(chars, length)
+                                                        .Select(s => s[random.Next(s.Length)]).ToArray());
+                label13.Text = randomString;
+            }
+        }
+
+        private void tabPage4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (System.Text.RegularExpressions.Regex.IsMatch(textBox5.Text, "[^0-9]") || Int32.Parse(textBox5.Text[0].ToString()) > 3 || Int32.Parse(textBox5.Text) > 32)
+                {
+                    textBox5.Text = textBox5.Text.Remove(textBox5.Text.Length - 1);
+                }
+            }catch(Exception)
+            {
+
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(label13.Text);
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                WebClient webClient = new WebClient();
+                var version = webClient.DownloadString("https://raw.githubusercontent.com/darkSect0r/MonoPass/main/version.txt");
+                if (Int32.Parse(version) >= 0.2)
+                {
+                    MessageBox.Show("Monopass is up to date");
+                }
+                else
+                {
+                    MessageBox.Show("An update was found");
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Server is offline");
+            }
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            saveNotes();
         }
     }
 }
