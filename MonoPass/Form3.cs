@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -35,6 +36,21 @@ namespace MonoPass
             {
                 button3.PerformClick();
             }
+        }
+
+        private void Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (new StackTrace().GetFrames().Any(x => x.GetMethod().Name == "Close"))
+            { }
+            else
+            {
+                Application.Exit();
+            }
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            Form3.ActiveForm.FormClosing += Form_FormClosing;
         }
     }
 }
