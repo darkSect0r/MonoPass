@@ -22,6 +22,15 @@ There is a ToDo List you can also check for some ideas :smile:
 Created by The darkSector Team.
 
 <hr>
+Updates:<br><br>
+V0.2<br>
+-creates data dir if doesnt exist<br>
+-fixed form2.cs ui padding<br>
+-fixed error when closing form1.cs by X button<br>
+-added random password generator & notes<br>
+-added update check<br>
+
+<hr>
 
 I hope you enjoy this release! If you want to see more releases like this, check out our Discord server at:<br>
 https://discord.gg/DcxPygc
