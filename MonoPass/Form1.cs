@@ -240,6 +240,7 @@ namespace MonoPass
             try
             {
                 saveF();
+                saveNotes();
                 MessageBox.Show("Master Password saved.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch
@@ -397,7 +398,7 @@ namespace MonoPass
         {
             try
             {
-                if (System.Text.RegularExpressions.Regex.IsMatch(textBox5.Text, "[^0-9]") || Int32.Parse(textBox5.Text[0].ToString()) > 3 || Int32.Parse(textBox5.Text) > 32)
+                if (System.Text.RegularExpressions.Regex.IsMatch(textBox5.Text, "[^0-9]") || Int32.Parse(textBox5.Text[0].ToString()) > 32 || Int32.Parse(textBox5.Text) > 32)
                 {
                     textBox5.Text = textBox5.Text.Remove(textBox5.Text.Length - 1);
                 }
