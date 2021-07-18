@@ -7,8 +7,8 @@
 # MonoPass v0.2 Gama Build
 ## created by The darkSector Team
 
-#### Released: <i>09/06/2021</i><br>
-### Last Update: <i>19/06/2021</i>
+#### Released: 09/06/2021<br>
+### <i>Last Update: 07/18/2021</i>
 
 <hr>
 
