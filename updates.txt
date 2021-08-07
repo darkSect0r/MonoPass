@@ -1,6 +1,0 @@
-V0.2
--creates data dir if doesnt exist
--fixed form2.cs ui padding
--fixed error when closing form1.cs by X button
--added random password generator & notes
--added update check
