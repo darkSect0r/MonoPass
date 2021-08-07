@@ -1,14 +1,15 @@
 
 <img src="ss1.png">
+<img src="ss5.png">
 <img src="ss2.png">
 <img src="ss3.png">
 <img src="ss4.png">
 
-# MonoPass v0.2 Gama Build
+# MonoPass v0.3 Stable
 ## created by The darkSector Team
 
 #### Released: 09/06/2021<br>
-### <i>Last Update: 07/18/2021</i>
+### <i>Last Update: 07/08/2021</i>
 
 <hr>
 
@@ -30,6 +31,10 @@ V0.2<br>
 -added random password generator & notes<br>
 -added update check<br>
 
+V0.3<br>
+-made credential name editable
+-"copied..." label timer bug fixed
+-update check repaired
 <hr>
 
 I hope you enjoy this release! If you want to see more releases like this, check out our Discord server at:<br>
