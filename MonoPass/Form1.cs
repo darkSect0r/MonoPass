@@ -7,6 +7,7 @@ using System.Text;
 using mpdata;
 using System.Linq;
 using System.Net;
+using System.Globalization;
 
 namespace MonoPass
 {
@@ -93,10 +94,11 @@ namespace MonoPass
             try
             {
                 Form2 form2 = new Form2();
-                form2.groupBox1.Text = listView1.Items[listView1.FocusedItem.Index].Text;
+                form2.maskedTextBox3.Text = listView1.Items[listView1.FocusedItem.Index].Text;
                 form2.maskedTextBox1.Text = listView1.Items[listView1.FocusedItem.Index].SubItems[1].Text;
                 form2.maskedTextBox2.Text = listView1.Items[listView1.FocusedItem.Index].SubItems[2].Text;
                 form2.ShowDialog();
+                listView1.Items[listView1.FocusedItem.Index].SubItems[0].Text = form2.maskedTextBox3.Text;
                 listView1.Items[listView1.FocusedItem.Index].SubItems[1].Text = form2.maskedTextBox1.Text;
                 listView1.Items[listView1.FocusedItem.Index].SubItems[2].Text = form2.maskedTextBox2.Text;
             }
@@ -419,7 +421,7 @@ namespace MonoPass
             {
                 WebClient webClient = new WebClient();
                 var version = webClient.DownloadString("https://raw.githubusercontent.com/darkSect0r/MonoPass/main/version.txt");
-                if (Int32.Parse(version) >= 0.2)
+                if (float.Parse(version, CultureInfo.InvariantCulture.NumberFormat) >= 0.3)
                 {
                     MessageBox.Show("Monopass is up to date");
                 }
@@ -428,7 +430,7 @@ namespace MonoPass
                     MessageBox.Show("An update was found");
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 MessageBox.Show("Server is offline");
             }
