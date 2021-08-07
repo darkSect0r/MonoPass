@@ -51,6 +51,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.listView1 = new ListViewCustomReorder.ListViewEx();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label10 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -59,24 +63,20 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.azcheckbox = new System.Windows.Forms.CheckBox();
-            this.numcheckbox = new System.Windows.Forms.CheckBox();
-            this.lowerazcheckbox = new System.Windows.Forms.CheckBox();
-            this.specialcheckbox = new System.Windows.Forms.CheckBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.listView1 = new ListViewCustomReorder.ListViewEx();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label15 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.specialcheckbox = new System.Windows.Forms.CheckBox();
+            this.lowerazcheckbox = new System.Windows.Forms.CheckBox();
+            this.numcheckbox = new System.Windows.Forms.CheckBox();
+            this.azcheckbox = new System.Windows.Forms.CheckBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.button10 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -108,7 +108,7 @@
             this.button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(8, 337);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button1.Size = new System.Drawing.Size(455, 43);
@@ -129,7 +129,7 @@
             this.button2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(471, 337);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button2.Size = new System.Drawing.Size(455, 43);
@@ -150,7 +150,7 @@
             this.button3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(584, 312);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(180, 52);
             this.button3.TabIndex = 4;
@@ -163,7 +163,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Calibri", 12F);
             this.textBox1.Location = new System.Drawing.Point(273, 159);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(491, 32);
             this.textBox1.TabIndex = 1;
@@ -181,7 +181,7 @@
             this.button4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(8, 388);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(917, 43);
             this.button4.TabIndex = 9;
@@ -206,7 +206,7 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Font = new System.Drawing.Font("Calibri", 12F);
             this.textBox2.Location = new System.Drawing.Point(273, 201);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(491, 32);
             this.textBox2.TabIndex = 2;
@@ -217,7 +217,7 @@
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Font = new System.Drawing.Font("Calibri", 12F);
             this.textBox3.Location = new System.Drawing.Point(273, 242);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.PasswordChar = '¤';
             this.textBox3.Size = new System.Drawing.Size(491, 32);
@@ -281,7 +281,7 @@
             this.button6.ForeColor = System.Drawing.Color.AliceBlue;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
             this.button6.Location = new System.Drawing.Point(773, 242);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(45, 33);
             this.button6.TabIndex = 11;
@@ -298,7 +298,7 @@
             this.button7.ForeColor = System.Drawing.Color.AliceBlue;
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
             this.button7.Location = new System.Drawing.Point(741, 150);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(45, 33);
             this.button7.TabIndex = 11;
@@ -311,7 +311,7 @@
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(147, 150);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
             this.textBox4.PasswordChar = '¤';
             this.textBox4.Size = new System.Drawing.Size(586, 32);
@@ -364,7 +364,7 @@
             this.tabControl1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.HotTrack = true;
             this.tabControl1.Location = new System.Drawing.Point(16, 134);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(944, 486);
@@ -380,12 +380,56 @@
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.tabPage1.Location = new System.Drawing.Point(4, 45);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage1.Size = new System.Drawing.Size(936, 437);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Logins";
+            // 
+            // listView1
+            // 
+            this.listView1.Activation = System.Windows.Forms.ItemActivation.OneClick;
+            this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.listView1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView1.FullRowSelect = true;
+            this.listView1.HideSelection = false;
+            this.listView1.LineAfter = -1;
+            this.listView1.LineBefore = -1;
+            this.listView1.Location = new System.Drawing.Point(4, 7);
+            this.listView1.Margin = new System.Windows.Forms.Padding(4);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(917, 322);
+            this.listView1.TabIndex = 14;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            this.listView1.DoubleClick += new System.EventHandler(this.listView1_DoubleClick);
+            this.listView1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.listView1_KeyPress);
+            this.listView1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.listView1_MouseDown);
+            this.listView1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.listView1_MouseMove);
+            this.listView1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.listView1_MouseUp);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Name";
+            this.columnHeader1.Width = 225;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Login ID";
+            this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader2.Width = 222;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Password";
+            this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader3.Width = 222;
             // 
             // tabPage2
             // 
@@ -400,9 +444,9 @@
             this.tabPage2.Controls.Add(this.label4);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Location = new System.Drawing.Point(4, 45);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage2.Size = new System.Drawing.Size(936, 437);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Add Login";
@@ -431,7 +475,7 @@
             this.tabPage3.Controls.Add(this.textBox4);
             this.tabPage3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.tabPage3.Location = new System.Drawing.Point(4, 45);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(936, 437);
             this.tabPage3.TabIndex = 2;
@@ -449,7 +493,7 @@
             this.button5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Location = new System.Drawing.Point(553, 215);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(180, 52);
             this.button5.TabIndex = 15;
@@ -518,111 +562,44 @@
             this.tabPage4.Text = "Misc";
             this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
             // 
-            // label12
+            // button11
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Location = new System.Drawing.Point(6, 17);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(373, 38);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Random password generator";
+            this.button11.BackColor = System.Drawing.Color.LimeGreen;
+            this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button11.FlatAppearance.BorderColor = System.Drawing.Color.LimeGreen;
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
+            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.Color.White;
+            this.button11.Location = new System.Drawing.Point(425, 197);
+            this.button11.Margin = new System.Windows.Forms.Padding(4);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(172, 40);
+            this.button11.TabIndex = 26;
+            this.button11.Text = "&Save";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
-            // label13
+            // label15
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label13.ForeColor = System.Drawing.Color.Lime;
-            this.label13.Location = new System.Drawing.Point(3, 144);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(86, 23);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "password";
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label15.Location = new System.Drawing.Point(418, 17);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(90, 38);
+            this.label15.TabIndex = 25;
+            this.label15.Text = "Notes";
             // 
-            // button8
+            // richTextBox1
             // 
-            this.button8.BackColor = System.Drawing.Color.LimeGreen;
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.LimeGreen;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(10, 197);
-            this.button8.Margin = new System.Windows.Forms.Padding(4);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(172, 40);
-            this.button8.TabIndex = 16;
-            this.button8.Text = "&Generate";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // textBox5
-            // 
-            this.textBox5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox5.Location = new System.Drawing.Point(319, 58);
-            this.textBox5.MaxLength = 2;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(47, 42);
-            this.textBox5.TabIndex = 17;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label14.Location = new System.Drawing.Point(6, 60);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(214, 37);
-            this.label14.TabIndex = 18;
-            this.label14.Text = "Length (max. 32)";
-            // 
-            // azcheckbox
-            // 
-            this.azcheckbox.AutoSize = true;
-            this.azcheckbox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.azcheckbox.Location = new System.Drawing.Point(13, 101);
-            this.azcheckbox.Name = "azcheckbox";
-            this.azcheckbox.Size = new System.Drawing.Size(82, 41);
-            this.azcheckbox.TabIndex = 19;
-            this.azcheckbox.Text = "A-Z";
-            this.azcheckbox.UseVisualStyleBackColor = true;
-            // 
-            // numcheckbox
-            // 
-            this.numcheckbox.AutoSize = true;
-            this.numcheckbox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.numcheckbox.Location = new System.Drawing.Point(169, 101);
-            this.numcheckbox.Name = "numcheckbox";
-            this.numcheckbox.Size = new System.Drawing.Size(80, 41);
-            this.numcheckbox.TabIndex = 20;
-            this.numcheckbox.Text = "0-9";
-            this.numcheckbox.UseVisualStyleBackColor = true;
-            // 
-            // lowerazcheckbox
-            // 
-            this.lowerazcheckbox.AutoSize = true;
-            this.lowerazcheckbox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lowerazcheckbox.Location = new System.Drawing.Point(91, 100);
-            this.lowerazcheckbox.Name = "lowerazcheckbox";
-            this.lowerazcheckbox.Size = new System.Drawing.Size(76, 41);
-            this.lowerazcheckbox.TabIndex = 21;
-            this.lowerazcheckbox.Text = "a-z";
-            this.lowerazcheckbox.UseVisualStyleBackColor = true;
-            // 
-            // specialcheckbox
-            // 
-            this.specialcheckbox.AutoSize = true;
-            this.specialcheckbox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.specialcheckbox.Location = new System.Drawing.Point(255, 101);
-            this.specialcheckbox.Name = "specialcheckbox";
-            this.specialcheckbox.Size = new System.Drawing.Size(120, 41);
-            this.specialcheckbox.TabIndex = 22;
-            this.specialcheckbox.Text = "special";
-            this.specialcheckbox.UseVisualStyleBackColor = true;
+            this.richTextBox1.Location = new System.Drawing.Point(425, 58);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(505, 123);
+            this.richTextBox1.TabIndex = 24;
+            this.richTextBox1.Text = "";
             // 
             // button9
             // 
@@ -644,28 +621,115 @@
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // richTextBox1
+            // specialcheckbox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(425, 58);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(505, 123);
-            this.richTextBox1.TabIndex = 24;
-            this.richTextBox1.Text = "";
+            this.specialcheckbox.AutoSize = true;
+            this.specialcheckbox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.specialcheckbox.Location = new System.Drawing.Point(255, 101);
+            this.specialcheckbox.Name = "specialcheckbox";
+            this.specialcheckbox.Size = new System.Drawing.Size(120, 41);
+            this.specialcheckbox.TabIndex = 22;
+            this.specialcheckbox.Text = "special";
+            this.specialcheckbox.UseVisualStyleBackColor = true;
             // 
-            // label15
+            // lowerazcheckbox
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label15.Location = new System.Drawing.Point(418, 17);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(90, 38);
-            this.label15.TabIndex = 25;
-            this.label15.Text = "Notes";
+            this.lowerazcheckbox.AutoSize = true;
+            this.lowerazcheckbox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lowerazcheckbox.Location = new System.Drawing.Point(91, 100);
+            this.lowerazcheckbox.Name = "lowerazcheckbox";
+            this.lowerazcheckbox.Size = new System.Drawing.Size(76, 41);
+            this.lowerazcheckbox.TabIndex = 21;
+            this.lowerazcheckbox.Text = "a-z";
+            this.lowerazcheckbox.UseVisualStyleBackColor = true;
+            // 
+            // numcheckbox
+            // 
+            this.numcheckbox.AutoSize = true;
+            this.numcheckbox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.numcheckbox.Location = new System.Drawing.Point(169, 101);
+            this.numcheckbox.Name = "numcheckbox";
+            this.numcheckbox.Size = new System.Drawing.Size(80, 41);
+            this.numcheckbox.TabIndex = 20;
+            this.numcheckbox.Text = "0-9";
+            this.numcheckbox.UseVisualStyleBackColor = true;
+            // 
+            // azcheckbox
+            // 
+            this.azcheckbox.AutoSize = true;
+            this.azcheckbox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.azcheckbox.Location = new System.Drawing.Point(13, 101);
+            this.azcheckbox.Name = "azcheckbox";
+            this.azcheckbox.Size = new System.Drawing.Size(82, 41);
+            this.azcheckbox.TabIndex = 19;
+            this.azcheckbox.Text = "A-Z";
+            this.azcheckbox.UseVisualStyleBackColor = true;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label14.Location = new System.Drawing.Point(6, 60);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(214, 37);
+            this.label14.TabIndex = 18;
+            this.label14.Text = "Length (max. 32)";
+            // 
+            // textBox5
+            // 
+            this.textBox5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.textBox5.Location = new System.Drawing.Point(319, 58);
+            this.textBox5.MaxLength = 2;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(47, 42);
+            this.textBox5.TabIndex = 17;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.LimeGreen;
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.LimeGreen;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
+            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(10, 197);
+            this.button8.Margin = new System.Windows.Forms.Padding(4);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(172, 40);
+            this.button8.TabIndex = 16;
+            this.button8.Text = "&Generate";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label13.ForeColor = System.Drawing.Color.Lime;
+            this.label13.Location = new System.Drawing.Point(3, 144);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(86, 23);
+            this.label13.TabIndex = 1;
+            this.label13.Text = "password";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label12.Location = new System.Drawing.Point(6, 17);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(373, 38);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Random password generator";
             // 
             // button10
             // 
-            this.button10.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button10.BackColor = System.Drawing.Color.DodgerBlue;
             this.button10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button10.Location = new System.Drawing.Point(783, 627);
             this.button10.Name = "button10";
@@ -674,70 +738,6 @@
             this.button10.Text = "Check for updates";
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.LimeGreen;
-            this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button11.FlatAppearance.BorderColor = System.Drawing.Color.LimeGreen;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.Location = new System.Drawing.Point(425, 197);
-            this.button11.Margin = new System.Windows.Forms.Padding(4);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(172, 40);
-            this.button11.TabIndex = 26;
-            this.button11.Text = "&Save";
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
-            // listView1
-            // 
-            this.listView1.Activation = System.Windows.Forms.ItemActivation.OneClick;
-            this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3});
-            this.listView1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView1.FullRowSelect = true;
-            this.listView1.HideSelection = false;
-            this.listView1.LineAfter = -1;
-            this.listView1.LineBefore = -1;
-            this.listView1.Location = new System.Drawing.Point(4, 7);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(917, 322);
-            this.listView1.TabIndex = 14;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
-            this.listView1.DoubleClick += new System.EventHandler(this.listView1_DoubleClick);
-            this.listView1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.listView1_KeyPress);
-            this.listView1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.listView1_MouseDown);
-            this.listView1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.listView1_MouseMove);
-            this.listView1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.listView1_MouseUp);
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Name";
-            this.columnHeader1.Width = 225;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Login ID";
-            this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader2.Width = 222;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Password";
-            this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader3.Width = 222;
             // 
             // Form1
             // 
@@ -753,7 +753,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

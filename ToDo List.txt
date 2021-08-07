@@ -20,6 +20,6 @@ Version 2:
 6.	find and add Sexy tabs
 7.	New Theme?
 8.	Secure pass generator - added by TheDebianGuy
-9.	Add serial protection….is this needed??
+9.	Add serial protection, releases obfuscation
 10.	new icon?
 11.	SAVE USernames/profiles (Profiler…)( save size of column width when user adjusts??)

@@ -46,6 +46,7 @@ namespace MonoPass
             aTimer.Elapsed += OnTimedEvent;
             aTimer.AutoReset = true;
             aTimer.Enabled = true;
+            aTimer.Start();
         }
 
         private void OnTimedEvent(object source, ElapsedEventArgs e)
@@ -75,15 +76,18 @@ namespace MonoPass
                 }
             }
         }
-
+        private void maskedTextBox3_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+            //button3.Text = "Save"; //does not save until you click save changes in main screen
+        }
         private void maskedTextBox2_TextChanged(object sender, EventArgs e)
         {
-            button3.Text = "Save and Close";
+            //button3.Text = "Save"; //does not save until you click save changes in main screen
         }
 
         private void maskedTextBox1_TextChanged(object sender, EventArgs e)
         {
-            button3.Text = "Save and Close";
+            //button3.Text = "Save"; //does not save until you click save changes in main screen
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -92,6 +96,11 @@ namespace MonoPass
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
